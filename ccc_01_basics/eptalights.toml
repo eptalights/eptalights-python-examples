@@ -1,0 +1,7 @@
+[project]
+name = "ccc_01_basics"
+project_id = "..."
+extractor_output = "./gimple_extractor_output"
+transformed_output = "./gimple_transformed_output"
+code_type = "gcc_gimple"
+database_path = "eptalights.db"

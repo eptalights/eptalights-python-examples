@@ -1,0 +1,7 @@
+[project]
+name = "cpp_01_basics"
+project_id = "0001"
+extractor_output = "./gimple_extractor_output"
+transformed_output = "./gimple_transformed_output"
+code_type = "gcc_gimple"
+database_path = "eptalights.db"
