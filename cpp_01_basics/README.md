@@ -3,15 +3,15 @@
 
 ### Directory Structure
 
-All C++ source code can be found [here][src/].  
-The GIMPLE IR dump from the GCC compiler is available [here][gimple_readable/], or you can manually generate it using:
+All C++ source code can be found [here](src/).  
+The GIMPLE IR dump from the GCC compiler is available [here](gimple_readable/), or you can manually generate it using:
 
 ```bash
 gcc -fdump-tree-gimple src/[source_filename].cpp  
 ```
 
-All C++ extracted GIMPLE IR data can be found [here][gimple_extractor_output/].  
-Eptalights's decompiled pseudo-C code for all functions is provided [here][__eptalights_decompiled_code/].  
+All C++ extracted GIMPLE IR data can be found [here](gimple_extractor_output/).  
+Eptalights's decompiled pseudo-C code for all functions is provided [here](__eptalights_decompiled_code/).  
 Additionally, Eptalights offers a sample database (`eptalights.db`) and a configuration file (`eptalights.toml`), both available this current directory, to help you try these examples locally.
 
 ### Setting up Examples Locally  
