@@ -1,0 +1,36 @@
+
+main  (  )
+{
+
+	<bb 2> :
+	printNumbers  (  );
+	$T3 = 0;
+
+	<bb 3> :
+	nop;
+	return $T3;
+
+}
+
+printNumbers  (  )
+{
+
+	<bb 2> :
+	n = 1;
+
+	<bb 3> :
+	nop;
+	printf  ( R"("%d ")", n );
+	n = n + 1;
+	if ( n <= 10 )
+		goto <bb 4>;
+	else
+		goto <bb 5>;
+
+	<bb 4> :
+	nop;
+
+	<bb 5> :
+	return;
+
+}

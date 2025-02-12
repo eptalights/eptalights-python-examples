@@ -1,7 +1,7 @@
 GCCDIR = { put here the value of your ${GCCDIR} }
 
 CXXFLAGS =  -fplugin=/gimple_extractor.so 
-CXXFLAGS += -fplugin-arg-gimple_extractor-data_format=msgpack
+CXXFLAGS += -fplugin-arg-gimple_extractor-data_format=json
 CXXFLAGS += -fplugin-arg-gimple_extractor-source_path=/example/src
 CXXFLAGS += -fplugin-arg-gimple_extractor-output_path=/example/gimple_extractor_output
 

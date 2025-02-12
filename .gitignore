@@ -167,5 +167,6 @@ cpp_01_basics/pyscripts
 ccc_01_basics/bin
 cpp_01_basics/bin
 
-*.db
+# *.db
 .DS_Store
+reload.sh
