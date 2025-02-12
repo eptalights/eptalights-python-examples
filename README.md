@@ -1,6 +1,6 @@
 # Eptalights Python Examples
 
-This repository contains [Eptalights](http://eptalights.com) Python examples showcasing usage patterns.  
+This repository contains [Eptalights](http://eptalights.com) Python test repos to try out our APIs locally.  
 
 ## Supported Languages
 
