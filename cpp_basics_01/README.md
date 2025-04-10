@@ -25,7 +25,7 @@ python -m venv evnv
 pip install git+https://github.com/eptalights/eptalights-python.git
 
 # change directory to C++ examples
-cd cpp_01_basics
+cd cpp_basics_01
 
 # from this point you can either create a python test file in the directory or enter python REPL
 ```
