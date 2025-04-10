@@ -1,0 +1,4 @@
+[project]
+extractor_output_path = "./php_bytecode_extractor_output"
+code_type = "php_opcode"
+local_database_path = "eptalights.db"
