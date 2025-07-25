@@ -1,9 +1,9 @@
 GCCDIR = { put here the value of your ${GCCDIR} }
 
-CXXFLAGS =  -fplugin=/gimple_extractor.so 
-CXXFLAGS += -fplugin-arg-gimple_extractor-data_format=json
-CXXFLAGS += -fplugin-arg-gimple_extractor-source_path=/example/src
-CXXFLAGS += -fplugin-arg-gimple_extractor-output_path=/example/gimple_extractor_output
+CXXFLAGS =  -fplugin=/sophia_extractor_gimple.so 
+CXXFLAGS += -fplugin-arg-sophia_extractor_gimple-data_format=json
+CXXFLAGS += -fplugin-arg-sophia_extractor_gimple-source_path=/example/src
+CXXFLAGS += -fplugin-arg-sophia_extractor_gimple-output_path=/example/sophia_extract_output_gimple
 
 CCC = gcc
 SRCDIR = src
@@ -22,9 +22,9 @@ clean:
 	rm -rf $(BINDIR)
 
 extract:
-	docker run --rm -it --entrypoint /example/build_examples.sh -v ${PWD}/:/example -v ${GIMPLE_EXTRACTOR_PATH}:/gimple_extractor.so gcc:${DOCKER_GCC_VERSION}
+	docker run --rm -it --entrypoint /example/build_examples.sh -v ${PWD}/:/example -v ${GIMPLE_EXTRACTOR_PATH}:/sophia_extractor_gimple.so gcc:${DOCKER_GCC_VERSION}
 
 shell:
-	docker run --rm -it --entrypoint /bin/bash -v ${PWD}/:/example -v ${GIMPLE_EXTRACTOR_PATH}:/gimple_extractor.so gcc:${DOCKER_GCC_VERSION}
+	docker run --rm -it --entrypoint /bin/bash -v ${PWD}/:/example -v ${GIMPLE_EXTRACTOR_PATH}:/sophia_extractor_gimple.so gcc:${DOCKER_GCC_VERSION}
 
 .PHONY: all clean check

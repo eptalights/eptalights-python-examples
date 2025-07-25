@@ -17,3 +17,7 @@ Remember, this example repository is already configured with its database, so it
 ### PHP Examples
 
 [PHP Basic Examples](php_basics_01/README.md)
+
+### JAVA Examples
+
+[JAVA Basic Examples](java_basics_01/README.md)

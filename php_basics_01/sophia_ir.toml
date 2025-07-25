@@ -1,0 +1,4 @@
+[project]
+extractor_output_path = "./sophia_extract_output_php_opcode"
+code_type = "php_opcode"
+local_database_path = "sophia_ir.db"

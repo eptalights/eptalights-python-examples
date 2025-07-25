@@ -1,0 +1,73 @@
+# php_basics_01
+[Eptalights](https://eptalights.com) Sophia JAVA Basic Examples. 
+
+Remember, this example repository is already configured with its database, so it should be straightforward to use after cloning or downloading the repo.  
+
+### Directory Structure
+
+All JAVA source code can be found [here](src/).  
+All JAVA extracted JIMPLE JSON data extracted with Eptalights Sophia's [sophia-extractor-java](https://github.com/eptalights/sophia-extractor-java) can be found [here](sophia_extract_output_jimple/).  
+All SophiaIR decompiled pseudo-C code for all functions is provided [here](__sophia_decompiled_code/).  
+Additionally, Eptalights Sophia offers a sample database (`sophia_ir.db`) and a configuration file (`sophia_ir.toml`), both available this current directory, to help you try these examples locally.
+
+### Setting up Examples Locally  
+
+```sh
+# clone example repo
+git clone git@github.com:eptalights/sophia-python-examples.git
+cd path/to/sophia-python-examples
+
+# setup python environment 
+python -m venv evnv
+. venv/bin/activate
+
+# install sophia-python library
+pip install git+https://github.com/eptalights/sophia-python.git
+
+# change directory to JAVA examples
+cd java_basics_01
+
+# from this point you can either create a python test file in the directory or enter python REPL
+```
+
+### Testing our local setup.
+
+```python
+import eptalights_sophia
+api = eptalights_sophia.LocalAPI("./sophia_ir.toml")
+
+for fn in api.search_functions():
+    print(fn.name)
+
+# output
+"""
+main
+<init>
+<init>
+main
+<init>
+main
+main
+<init>
+bheap
+printarray
+Sort
+main
+<init>
+heapify
+main
+<init>
+main
+<init>
+reverse
+...
+"""
+```
+
+## Documentation
+
+For detailed documentation, please visit [Eptalights Documentation](https://sophia-python.readthedocs.io/en/latest/).
+
+You can also check out this [blog post](https://eptalights.com/blog/01-introduction-to-eptalights-technology/) for an introduction to Eptalights Technology.
+
+Visit Eptalights's Website [here][https://eptalights.com].

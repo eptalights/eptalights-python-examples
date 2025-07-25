@@ -1,0 +1,1138 @@
+{
+  "filename": "./classes/",
+  "name": "VowelsInaString",
+  "class_source": "classes/VowelsInaString.class",
+  "is_public": false,
+  "is_private": false,
+  "is_static": false,
+  "is_concrete": true,
+  "is_abstract": false,
+  "is_annotation": false,
+  "is_interface": false,
+  "is_application_class": true,
+  "is_enum": false,
+  "is_final": false,
+  "is_inner_class": false,
+  "is_library_class": false,
+  "is_super": true,
+  "interfaces": [],
+  "class_props": [],
+  "outer_class": null,
+  "super_class": "java.lang.Object",
+  "methods": [
+    {
+      "name": "<init>",
+      "return_type": "void",
+      "is_public": false,
+      "is_private": false,
+      "is_static": false,
+      "is_protected": false,
+      "is_native": false,
+      "is_final": false,
+      "is_concrete": true,
+      "is_abstract": false,
+      "has_body": true,
+      "param_count": 0,
+      "block_indices": [
+        0
+      ],
+      "block_successors": {
+        "0": []
+      },
+      "block_predecessors": {
+        "0": []
+      },
+      "instructions": [
+        {
+          "op": "JIDENTITY",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "left": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "this"
+              }
+            ]
+          },
+          "right": {
+            "value_type": "sootup.core.jimple.common.ref.JThisRef",
+            "value_tokens": [
+              {
+                "token_type": "SYMBOL",
+                "token_value": "@"
+              },
+              {
+                "token_type": "VARIABLE",
+                "token_value": "this"
+              }
+            ]
+          }
+        },
+        {
+          "op": "JINVOKE",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "method_name": "<init>",
+          "method_base": "this",
+          "method_name_type": "sootup.core.signatures.MethodSignature",
+          "method_base_type": "sootup.java.core.jimple.basic.JavaLocal",
+          "args": [],
+          "return_arg": null
+        },
+        {
+          "op": "JRETURNVOID",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0
+        }
+      ],
+      "local_vars": [
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "this"
+              }
+            ]
+          },
+          "vartype": "VowelsInaString"
+        },
+        {
+          "var": {
+            "value_type": "sootup.core.jimple.common.ref.JThisRef",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "this"
+              }
+            ]
+          },
+          "vartype": "VowelsInaString"
+        }
+      ],
+      "param_vars": []
+    },
+    {
+      "name": "main",
+      "return_type": "void",
+      "is_public": true,
+      "is_private": false,
+      "is_static": true,
+      "is_protected": false,
+      "is_native": false,
+      "is_final": false,
+      "is_concrete": true,
+      "is_abstract": false,
+      "has_body": true,
+      "param_count": 1,
+      "block_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "block_successors": {
+        "0": [
+          1
+        ],
+        "1": [
+          5,
+          2
+        ],
+        "2": [
+          3,
+          4
+        ],
+        "3": [
+          4
+        ],
+        "4": [],
+        "5": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          7
+        ],
+        "6": [
+          7
+        ],
+        "7": [
+          1
+        ]
+      },
+      "block_predecessors": {
+        "0": [],
+        "1": [
+          0,
+          7
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          2,
+          3
+        ],
+        "5": [
+          1
+        ],
+        "6": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "7": [
+          5,
+          6
+        ]
+      },
+      "instructions": [
+        {
+          "op": "JIDENTITY",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "left": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l0"
+              }
+            ]
+          },
+          "right": {
+            "value_type": "sootup.core.jimple.common.ref.JParameterRef",
+            "value_tokens": [
+              {
+                "token_type": "SYMBOL",
+                "token_value": "@"
+              },
+              {
+                "token_type": "VARIABLE",
+                "token_value": "parameter0"
+              }
+            ]
+          }
+        },
+        {
+          "op": "JASSIGN",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "left": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l3"
+              }
+            ]
+          },
+          "right": {
+            "expr_type": null,
+            "lhs": {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "0"
+                }
+              ]
+            },
+            "rhs": null
+          }
+        },
+        {
+          "op": "JASSIGN",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "left": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack7"
+              }
+            ]
+          },
+          "right": {
+            "expr_type": null,
+            "lhs": {
+              "value_type": "sootup.core.jimple.common.expr.JNewExpr",
+              "value_tokens": [
+                {
+                  "token_type": "SYMBOL",
+                  "token_value": "new"
+                },
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": " "
+                },
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "java.util.Scanner"
+                }
+              ]
+            },
+            "rhs": null
+          }
+        },
+        {
+          "op": "JASSIGN",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "left": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack6"
+              }
+            ]
+          },
+          "right": {
+            "expr_type": null,
+            "lhs": {
+              "value_type": "sootup.core.jimple.common.ref.JStaticFieldRef",
+              "value_tokens": [
+                {
+                  "token_type": "VARIABLE",
+                  "token_value": "sootup.core.signatures.FieldSignature.in"
+                }
+              ]
+            },
+            "rhs": null
+          }
+        },
+        {
+          "op": "JINVOKE",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "method_name": "<init>",
+          "method_base": "$stack7",
+          "method_name_type": "sootup.core.signatures.MethodSignature",
+          "method_base_type": "sootup.java.core.jimple.basic.JavaLocal",
+          "args": [
+            {
+              "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+              "value_tokens": [
+                {
+                  "token_type": "VARIABLE",
+                  "token_value": "$stack6"
+                }
+              ]
+            }
+          ],
+          "return_arg": null
+        },
+        {
+          "op": "JASSIGN",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "left": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l4"
+              }
+            ]
+          },
+          "right": {
+            "expr_type": null,
+            "lhs": {
+              "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+              "value_tokens": [
+                {
+                  "token_type": "VARIABLE",
+                  "token_value": "$stack7"
+                }
+              ]
+            },
+            "rhs": null
+          }
+        },
+        {
+          "op": "JASSIGN",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "left": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack8"
+              }
+            ]
+          },
+          "right": {
+            "expr_type": null,
+            "lhs": {
+              "value_type": "sootup.core.jimple.common.ref.JStaticFieldRef",
+              "value_tokens": [
+                {
+                  "token_type": "VARIABLE",
+                  "token_value": "sootup.core.signatures.FieldSignature.out"
+                }
+              ]
+            },
+            "rhs": null
+          }
+        },
+        {
+          "op": "JINVOKE",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "method_name": "print",
+          "method_base": "$stack8",
+          "method_name_type": "sootup.core.signatures.MethodSignature",
+          "method_base_type": "sootup.java.core.jimple.basic.JavaLocal",
+          "args": [
+            {
+              "value_type": "sootup.core.jimple.common.constant.StringConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "\"Enter a string : \""
+                }
+              ]
+            }
+          ],
+          "return_arg": null
+        },
+        {
+          "op": "JINVOKE",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "method_name": "nextLine",
+          "method_base": "$stack7",
+          "method_name_type": "sootup.core.signatures.MethodSignature",
+          "method_base_type": "sootup.java.core.jimple.basic.JavaLocal",
+          "args": [],
+          "return_arg": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l1"
+              }
+            ]
+          }
+        },
+        {
+          "op": "JASSIGN",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "left": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack9"
+              }
+            ]
+          },
+          "right": {
+            "expr_type": null,
+            "lhs": {
+              "value_type": "sootup.core.jimple.common.ref.JStaticFieldRef",
+              "value_tokens": [
+                {
+                  "token_type": "VARIABLE",
+                  "token_value": "sootup.core.signatures.FieldSignature.out"
+                }
+              ]
+            },
+            "rhs": null
+          }
+        },
+        {
+          "op": "JINVOKE",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "method_name": "println",
+          "method_base": "$stack9",
+          "method_name_type": "sootup.core.signatures.MethodSignature",
+          "method_base_type": "sootup.java.core.jimple.basic.JavaLocal",
+          "args": [
+            {
+              "value_type": "sootup.core.jimple.common.constant.StringConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "\"Vowels in a string are\""
+                }
+              ]
+            }
+          ],
+          "return_arg": null
+        },
+        {
+          "op": "JASSIGN",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 0,
+          "left": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l5"
+              }
+            ]
+          },
+          "right": {
+            "expr_type": null,
+            "lhs": {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "0"
+                }
+              ]
+            },
+            "rhs": null
+          }
+        },
+        {
+          "op": "JINVOKE",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 1,
+          "method_name": "length",
+          "method_base": "l1",
+          "method_name_type": "sootup.core.signatures.MethodSignature",
+          "method_base_type": "sootup.java.core.jimple.basic.JavaLocal",
+          "args": [],
+          "return_arg": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack10"
+              }
+            ]
+          }
+        },
+        {
+          "op": "JIF",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 1,
+          "src": {
+            "expr_type": ">=",
+            "lhs": {
+              "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+              "value_tokens": [
+                {
+                  "token_type": "VARIABLE",
+                  "token_value": "l5"
+                }
+              ]
+            },
+            "rhs": {
+              "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+              "value_tokens": [
+                {
+                  "token_type": "VARIABLE",
+                  "token_value": "$stack10"
+                }
+              ]
+            }
+          },
+          "true_block_index": 5,
+          "false_block_index": 2
+        },
+        {
+          "op": "JIF",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 2,
+          "src": {
+            "expr_type": "!=",
+            "lhs": {
+              "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+              "value_tokens": [
+                {
+                  "token_type": "VARIABLE",
+                  "token_value": "l3"
+                }
+              ]
+            },
+            "rhs": {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "0"
+                }
+              ]
+            }
+          },
+          "true_block_index": 3,
+          "false_block_index": 4
+        },
+        {
+          "op": "JASSIGN",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 3,
+          "left": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack11"
+              }
+            ]
+          },
+          "right": {
+            "expr_type": null,
+            "lhs": {
+              "value_type": "sootup.core.jimple.common.ref.JStaticFieldRef",
+              "value_tokens": [
+                {
+                  "token_type": "VARIABLE",
+                  "token_value": "sootup.core.signatures.FieldSignature.out"
+                }
+              ]
+            },
+            "rhs": null
+          }
+        },
+        {
+          "op": "JINVOKE",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 3,
+          "method_name": "println",
+          "method_base": "$stack11",
+          "method_name_type": "sootup.core.signatures.MethodSignature",
+          "method_base_type": "sootup.java.core.jimple.basic.JavaLocal",
+          "args": [
+            {
+              "value_type": "sootup.core.jimple.common.constant.StringConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "\"There are no vowels in a string\""
+                }
+              ]
+            }
+          ],
+          "return_arg": null
+        },
+        {
+          "op": "JRETURNVOID",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 4
+        },
+        {
+          "op": "JINVOKE",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 5,
+          "method_name": "charAt",
+          "method_base": "l1",
+          "method_name_type": "sootup.core.signatures.MethodSignature",
+          "method_base_type": "sootup.java.core.jimple.basic.JavaLocal",
+          "args": [
+            {
+              "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+              "value_tokens": [
+                {
+                  "token_type": "VARIABLE",
+                  "token_value": "l5"
+                }
+              ]
+            }
+          ],
+          "return_arg": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l2"
+              }
+            ]
+          }
+        },
+        {
+          "op": "JSWITCH",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 5,
+          "switch_index": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l2"
+              }
+            ]
+          },
+          "switch_cases": [
+            {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "65"
+                }
+              ]
+            },
+            {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "69"
+                }
+              ]
+            },
+            {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "73"
+                }
+              ]
+            },
+            {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "79"
+                }
+              ]
+            },
+            {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "85"
+                }
+              ]
+            },
+            {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "97"
+                }
+              ]
+            },
+            {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "101"
+                }
+              ]
+            },
+            {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "105"
+                }
+              ]
+            },
+            {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "111"
+                }
+              ]
+            },
+            {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "117"
+                }
+              ]
+            },
+            {
+              "value_type": "sootup.core.jimple.common.constant.StringConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "default"
+                }
+              ]
+            }
+          ],
+          "switch_targets": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            7
+          ]
+        },
+        {
+          "op": "JASSIGN",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 6,
+          "left": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l3"
+              }
+            ]
+          },
+          "right": {
+            "expr_type": null,
+            "lhs": {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "1"
+                }
+              ]
+            },
+            "rhs": null
+          }
+        },
+        {
+          "op": "JASSIGN",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 6,
+          "left": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack12"
+              }
+            ]
+          },
+          "right": {
+            "expr_type": null,
+            "lhs": {
+              "value_type": "sootup.core.jimple.common.ref.JStaticFieldRef",
+              "value_tokens": [
+                {
+                  "token_type": "VARIABLE",
+                  "token_value": "sootup.core.signatures.FieldSignature.out"
+                }
+              ]
+            },
+            "rhs": null
+          }
+        },
+        {
+          "op": "JINVOKE",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 6,
+          "method_name": "println",
+          "method_base": "$stack12",
+          "method_name_type": "sootup.core.signatures.MethodSignature",
+          "method_base_type": "sootup.java.core.jimple.basic.JavaLocal",
+          "args": [
+            {
+              "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+              "value_tokens": [
+                {
+                  "token_type": "VARIABLE",
+                  "token_value": "l2"
+                }
+              ]
+            }
+          ],
+          "return_arg": null
+        },
+        {
+          "op": "JASSIGN",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 7,
+          "left": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l5"
+              }
+            ]
+          },
+          "right": {
+            "expr_type": "+",
+            "lhs": {
+              "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+              "value_tokens": [
+                {
+                  "token_type": "VARIABLE",
+                  "token_value": "l5"
+                }
+              ]
+            },
+            "rhs": {
+              "value_type": "sootup.core.jimple.common.constant.IntConstant",
+              "value_tokens": [
+                {
+                  "token_type": "CONSTANT",
+                  "token_value": "1"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "op": "JGOTO",
+          "falls_through": true,
+          "has_branches": false,
+          "block_index": 7,
+          "targets": [
+            1
+          ]
+        }
+      ],
+      "local_vars": [
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l0"
+              }
+            ]
+          },
+          "vartype": "java.lang.String[]"
+        },
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l1"
+              }
+            ]
+          },
+          "vartype": "java.lang.String"
+        },
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l2"
+              }
+            ]
+          },
+          "vartype": "char"
+        },
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l3"
+              }
+            ]
+          },
+          "vartype": "boolean"
+        },
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l4"
+              }
+            ]
+          },
+          "vartype": "java.util.Scanner"
+        },
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l5"
+              }
+            ]
+          },
+          "vartype": "int"
+        },
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack11"
+              }
+            ]
+          },
+          "vartype": "java.io.PrintStream"
+        },
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack12"
+              }
+            ]
+          },
+          "vartype": "java.io.PrintStream"
+        },
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack10"
+              }
+            ]
+          },
+          "vartype": "int"
+        },
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack9"
+              }
+            ]
+          },
+          "vartype": "java.io.PrintStream"
+        },
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack8"
+              }
+            ]
+          },
+          "vartype": "java.io.PrintStream"
+        },
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack7"
+              }
+            ]
+          },
+          "vartype": "java.util.Scanner"
+        },
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "$stack6"
+              }
+            ]
+          },
+          "vartype": "java.io.InputStream"
+        },
+        {
+          "var": {
+            "value_type": "sootup.core.jimple.common.ref.JParameterRef",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "parameter0"
+              }
+            ]
+          },
+          "vartype": "java.lang.String[]"
+        }
+      ],
+      "param_vars": [
+        {
+          "var": {
+            "value_type": "sootup.java.core.jimple.basic.JavaLocal",
+            "value_tokens": [
+              {
+                "token_type": "VARIABLE",
+                "token_value": "l0"
+              }
+            ]
+          },
+          "vartype": "java.lang.String[]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+[project]
+extractor_output_path = "./sophia_extract_output_jimple"
+code_type = "jvm_jimple"
+local_database_path = "./sophia_ir.db"
