@@ -1,4 +1,4 @@
-# php_basics_01
+# java_basics_01
 [Eptalights](https://eptalights.com) Sophia JAVA Basic Examples. 
 
 Remember, this example repository is already configured with its database, so it should be straightforward to use after cloning or downloading the repo.  
