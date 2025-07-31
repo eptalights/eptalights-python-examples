@@ -23,7 +23,7 @@ DecimalToHexa :: main  ( java.lang.String[] l0 )
 	java.lang.String[] parameter0 ;
 
 	<bb 0> :
-	l0 = @parameter0;
+	nop;
 	$stack6 = newarray(char)[16];
 	$stack6[0] = 48;
 	$stack6[1] = 49;
@@ -44,13 +44,13 @@ DecimalToHexa :: main  ( java.lang.String[] l0 )
 	l1 = $stack6;
 	l4 = "";
 	$stack8 = new  ( java.util.Scanner );
-	$stack7 = sootup.core.signatures.FieldSignature.in;
+	$stack7 = java.io.InputStream.in;
 	$stack8.<init>  ( $stack7 );
 	l5 = $stack8;
-	$stack9 = sootup.core.signatures.FieldSignature.out;
+	$stack9 = java.io.PrintStream.out;
 	$stack9.println  ( "Enter a Decimal number: " );
 	l3 = $stack8.nextInt  (  );
-	$stack10 = sootup.core.signatures.FieldSignature.out;
+	$stack10 = java.io.PrintStream.out;
 	$stack10.println  ( "Hexadecimal number is : " );
 
 	<bb 1> :
@@ -60,7 +60,7 @@ DecimalToHexa :: main  ( java.lang.String[] l0 )
 		goto <bb 2>;
 
 	<bb 2> :
-	$stack11 = sootup.core.signatures.FieldSignature.out;
+	$stack11 = java.io.PrintStream.out;
 	$stack11.print  ( l4 );
 	return;
 
@@ -78,7 +78,7 @@ DecimalToHexa :: <init>  (  )
 	DecimalToHexa this ;
 
 	<bb 0> :
-	this = @this;
+	nop;
 	this.<init>  (  );
 	return;
 

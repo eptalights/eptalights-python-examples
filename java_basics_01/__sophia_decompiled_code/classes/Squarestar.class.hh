@@ -11,7 +11,7 @@ Squarestar :: <init>  (  )
 	Squarestar this ;
 
 	<bb 0> :
-	this = @this;
+	nop;
 	this.<init>  (  );
 	return;
 
@@ -24,7 +24,7 @@ Squarestar :: main  ( java.lang.String[] l0 )
 	java.lang.String[] parameter0 ;
 
 	<bb 0> :
-	l0 = @parameter0;
+	nop;
 	l1 = 0;
 
 	<bb 1> :
@@ -37,7 +37,7 @@ Squarestar :: main  ( java.lang.String[] l0 )
 	return;
 
 	<bb 3> :
-	$stack2 = sootup.core.signatures.FieldSignature.out;
+	$stack2 = java.io.PrintStream.out;
 	$stack2.println  ( "***** " );
 	l1 = l1 + 1;
 	goto BB_1;

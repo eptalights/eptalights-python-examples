@@ -1,5 +1,5 @@
 {
-  "filename": "./classes/",
+  "filename": "./classes",
   "name": "Squarestar",
   "class_source": "classes/Squarestar.class",
   "is_public": true,
@@ -276,7 +276,7 @@
               "value_tokens": [
                 {
                   "token_type": "VARIABLE",
-                  "token_value": "sootup.core.signatures.FieldSignature.out"
+                  "token_value": "java.io.PrintStream.out"
                 }
               ]
             },

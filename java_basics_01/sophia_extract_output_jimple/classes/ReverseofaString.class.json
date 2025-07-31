@@ -1,5 +1,5 @@
 {
-  "filename": "./classes/",
+  "filename": "./classes",
   "name": "ReverseofaString",
   "class_source": "classes/ReverseofaString.class",
   "is_public": false,
@@ -204,7 +204,7 @@
               "value_tokens": [
                 {
                   "token_type": "VARIABLE",
-                  "token_value": "sootup.core.signatures.FieldSignature.in"
+                  "token_value": "java.io.InputStream.in"
                 }
               ]
             },
@@ -282,7 +282,7 @@
               "value_tokens": [
                 {
                   "token_type": "VARIABLE",
-                  "token_value": "sootup.core.signatures.FieldSignature.out"
+                  "token_value": "java.io.PrintStream.out"
                 }
               ]
             },
@@ -352,7 +352,7 @@
               "value_tokens": [
                 {
                   "token_type": "VARIABLE",
-                  "token_value": "sootup.core.signatures.FieldSignature.out"
+                  "token_value": "java.io.PrintStream.out"
                 }
               ]
             },

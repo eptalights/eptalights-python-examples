@@ -11,7 +11,7 @@ VowelsInaString :: <init>  (  )
 	VowelsInaString this ;
 
 	<bb 0> :
-	this = @this;
+	nop;
 	this.<init>  (  );
 	return;
 
@@ -34,16 +34,16 @@ VowelsInaString :: main  ( java.lang.String[] l0 )
 	java.lang.String[] parameter0 ;
 
 	<bb 0> :
-	l0 = @parameter0;
+	nop;
 	l3 = 0;
 	$stack7 = new  ( java.util.Scanner );
-	$stack6 = sootup.core.signatures.FieldSignature.in;
+	$stack6 = java.io.InputStream.in;
 	$stack7.<init>  ( $stack6 );
 	l4 = $stack7;
-	$stack8 = sootup.core.signatures.FieldSignature.out;
+	$stack8 = java.io.PrintStream.out;
 	$stack8.print  ( "Enter a string : " );
 	l1 = $stack7.nextLine  (  );
-	$stack9 = sootup.core.signatures.FieldSignature.out;
+	$stack9 = java.io.PrintStream.out;
 	$stack9.println  ( "Vowels in a string are" );
 	l5 = 0;
 
@@ -61,7 +61,7 @@ VowelsInaString :: main  ( java.lang.String[] l0 )
 		goto <bb 4>;
 
 	<bb 3> :
-	$stack11 = sootup.core.signatures.FieldSignature.out;
+	$stack11 = java.io.PrintStream.out;
 	$stack11.println  ( "There are no vowels in a string" );
 
 	<bb 4> :
@@ -95,7 +95,7 @@ VowelsInaString :: main  ( java.lang.String[] l0 )
 
 	<bb 6> :
 	l3 = 1;
-	$stack12 = sootup.core.signatures.FieldSignature.out;
+	$stack12 = java.io.PrintStream.out;
 	$stack12.println  ( l2 );
 
 	<bb 7> :

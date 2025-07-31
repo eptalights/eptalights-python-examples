@@ -22,18 +22,18 @@ ReverseofaString :: main  ( java.lang.String[] l0 )
 	java.lang.String[] parameter0 ;
 
 	<bb 0> :
-	l0 = @parameter0;
+	nop;
 	$stack4 = new  ( ReverseofaString );
 	$stack4.<init>  (  );
 	l1 = $stack4;
 	$stack6 = new  ( java.util.Scanner );
-	$stack5 = sootup.core.signatures.FieldSignature.in;
+	$stack5 = java.io.InputStream.in;
 	$stack6.<init>  ( $stack5 );
 	l2 = $stack6;
-	$stack7 = sootup.core.signatures.FieldSignature.out;
+	$stack7 = java.io.PrintStream.out;
 	$stack7.print  ( "Enter a string : " );
 	l3 = $stack6.nextLine  (  );
-	$stack9 = sootup.core.signatures.FieldSignature.out;
+	$stack9 = java.io.PrintStream.out;
 	$stack8 = $stack4;
 	$stack10 = reverse  ( l3 );
 	$stack11 = java.lang.invoke.StringConcatFactory.makeConcatWithConstants  ( "Reverse of a String  is : \u0001", $stack10 );
@@ -47,7 +47,7 @@ ReverseofaString :: <init>  (  )
 	ReverseofaString this ;
 
 	<bb 0> :
-	this = @this;
+	nop;
 	this.<init>  (  );
 	return;
 
@@ -62,7 +62,7 @@ ReverseofaString :: reverse  ( java.lang.String l0 )
 	java.lang.String parameter0 ;
 
 	<bb 0> :
-	l0 = @parameter0;
+	nop;
 	l1 = "";
 	l2 = l0.length  (  );
 

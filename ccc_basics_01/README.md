@@ -55,7 +55,7 @@ main
 
 ## Documentation
 
-For detailed documentation, please visit [Eptalights Documentation](https://sophia-python.readthedocs.io/en/latest/).
+For detailed documentation, please visit [Eptalights Documentation](https://eptalights-sophia.readthedocs.io/en/latest/).
 
 You can also check out this [blog post](https://eptalights.com/blog/01-introduction-to-eptalights-technology/) for an introduction to Eptalights Technology.
 

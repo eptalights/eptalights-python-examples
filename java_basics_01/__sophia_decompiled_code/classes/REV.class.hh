@@ -29,18 +29,18 @@ REV :: main  ( java.lang.String[] l0 )
 	java.lang.String[] parameter0 ;
 
 	<bb 0> :
-	l0 = @parameter0;
+	nop;
 	l4 = 0;
 	$stack9 = new  ( java.util.Scanner );
-	$stack8 = sootup.core.signatures.FieldSignature.in;
+	$stack8 = java.io.InputStream.in;
 	$stack9.<init>  ( $stack8 );
 	l5 = $stack9;
-	$stack10 = sootup.core.signatures.FieldSignature.out;
+	$stack10 = java.io.PrintStream.out;
 	$stack10.print  ( "Enter number of elements in the array:" );
 	l1 = $stack9.nextInt  (  );
 	l6 = newarray(int)[l1];
 	l7 = newarray(int)[l1];
-	$stack11 = sootup.core.signatures.FieldSignature.out;
+	$stack11 = java.io.PrintStream.out;
 	$stack12 = java.lang.invoke.StringConcatFactory.makeConcatWithConstants  ( "Enter \u0001 elements ", l1 );
 	$stack11.println  ( $stack12 );
 	l3#0 = 0;
@@ -52,7 +52,7 @@ REV :: main  ( java.lang.String[] l0 )
 		goto <bb 2>;
 
 	<bb 2> :
-	$stack13 = sootup.core.signatures.FieldSignature.out;
+	$stack13 = java.io.PrintStream.out;
 	$stack13.println  ( "Reverse of an array is :" );
 	l3#1 = l1;
 
@@ -69,7 +69,7 @@ REV :: main  ( java.lang.String[] l0 )
 	$stack14 = l3#1 - 1;
 	$stack15 = l6[$stack14];
 	l7[l4] = $stack15;
-	$stack17 = sootup.core.signatures.FieldSignature.out;
+	$stack17 = java.io.PrintStream.out;
 	$stack16 = l7[l4];
 	$stack17.println  ( $stack16 );
 	l3#1 = l3#1 + -1;
@@ -89,7 +89,7 @@ REV :: <init>  (  )
 	REV this ;
 
 	<bb 0> :
-	this = @this;
+	nop;
 	this.<init>  (  );
 	return;
 

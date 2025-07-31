@@ -1,5 +1,5 @@
 {
-  "filename": "./classes/",
+  "filename": "./classes",
   "name": "HelloWorld",
   "class_source": "classes/HelloWorld.class",
   "is_public": false,
@@ -92,7 +92,7 @@
               "value_tokens": [
                 {
                   "token_type": "VARIABLE",
-                  "token_value": "sootup.core.signatures.FieldSignature.out"
+                  "token_value": "java.io.PrintStream.out"
                 }
               ]
             },

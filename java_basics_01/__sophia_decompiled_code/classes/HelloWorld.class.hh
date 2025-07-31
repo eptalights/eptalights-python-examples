@@ -12,8 +12,8 @@ HelloWorld :: main  ( java.lang.String[] l0 )
 	java.lang.String[] parameter0 ;
 
 	<bb 0> :
-	l0 = @parameter0;
-	$stack1 = sootup.core.signatures.FieldSignature.out;
+	nop;
+	$stack1 = java.io.PrintStream.out;
 	$stack1.println  ( "Hello World" );
 	return;
 
@@ -24,7 +24,7 @@ HelloWorld :: <init>  (  )
 	HelloWorld this ;
 
 	<bb 0> :
-	this = @this;
+	nop;
 	this.<init>  (  );
 	return;
 

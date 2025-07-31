@@ -15,7 +15,7 @@ HSort :: bheap  ( int[] l0 )
 	int[] parameter0 ;
 
 	<bb 0> :
-	l0 = @parameter0;
+	nop;
 	$stack2 = lengthof  ( l0 );
 	$stack3 = $stack2 / 2;
 	l1 = $stack3 - 1;
@@ -48,8 +48,8 @@ HSort :: printarray  ( int[] l0 )
 	int[] parameter0 ;
 
 	<bb 0> :
-	l0 = @parameter0;
-	$stack2 = sootup.core.signatures.FieldSignature.out;
+	nop;
+	$stack2 = java.io.PrintStream.out;
 	$stack2.println  (  );
 	l1 = 0;
 
@@ -64,7 +64,7 @@ HSort :: printarray  ( int[] l0 )
 	return;
 
 	<bb 3> :
-	$stack5 = sootup.core.signatures.FieldSignature.out;
+	$stack5 = java.io.PrintStream.out;
 	$stack4 = l0[l1];
 	$stack6 = java.lang.invoke.StringConcatFactory.makeConcatWithConstants  ( "\u0001 ", $stack4 );
 	$stack5.print  ( $stack6 );
@@ -83,7 +83,7 @@ HSort :: Sort  ( int[] l0 )
 	int[] parameter0 ;
 
 	<bb 0> :
-	l0 = @parameter0;
+	nop;
 	bheap  ( l0 );
 	$stack4 = lengthof  ( l0 );
 	l3 = $stack4 - 1;
@@ -126,16 +126,16 @@ HSort :: main  ( java.lang.String[] l0 )
 	java.lang.String[] parameter0 ;
 
 	<bb 0> :
-	l0 = @parameter0;
+	nop;
 	$stack7 = new  ( java.util.Scanner );
-	$stack6 = sootup.core.signatures.FieldSignature.in;
+	$stack6 = java.io.InputStream.in;
 	$stack7.<init>  ( $stack6 );
 	l4 = $stack7;
-	$stack8 = sootup.core.signatures.FieldSignature.out;
+	$stack8 = java.io.PrintStream.out;
 	$stack8.print  ( "Enter number of elements in the array:" );
 	l1 = $stack7.nextInt  (  );
 	l5 = newarray(int)[l1];
-	$stack9 = sootup.core.signatures.FieldSignature.out;
+	$stack9 = java.io.PrintStream.out;
 	$stack10 = java.lang.invoke.StringConcatFactory.makeConcatWithConstants  ( "Enter \u0001 elements ", l1 );
 	$stack9.println  ( $stack10 );
 	l3 = 0;
@@ -147,11 +147,11 @@ HSort :: main  ( java.lang.String[] l0 )
 		goto <bb 2>;
 
 	<bb 2> :
-	$stack11 = sootup.core.signatures.FieldSignature.out;
+	$stack11 = java.io.PrintStream.out;
 	$stack11.println  ( "elements in array " );
 	printarray  ( l5 );
 	Sort  ( l5 );
-	$stack12 = sootup.core.signatures.FieldSignature.out;
+	$stack12 = java.io.PrintStream.out;
 	$stack12.println  ( "\nelements after sorting" );
 	printarray  ( l5 );
 	return;
@@ -169,7 +169,7 @@ HSort :: <init>  (  )
 	HSort this ;
 
 	<bb 0> :
-	this = @this;
+	nop;
 	this.<init>  (  );
 	return;
 
@@ -193,9 +193,9 @@ HSort :: heapify  ( int[] l0, int l1, int l2 )
 	int parameter2 ;
 
 	<bb 0> :
-	l0 = @parameter0;
-	l1 = @parameter1;
-	l2 = @parameter2;
+	nop;
+	nop;
+	nop;
 	$stack7 = 2 * l1;
 	l3 = $stack7 + 1;
 	$stack8 = 2 * l1;
