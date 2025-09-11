@@ -1,0 +1,4 @@
+[project]
+extractor_output_path = "./eptalights_code_extract_output_cxx"
+code_type = "gcc_gimple"
+local_database_path = "eptalights_code.db"

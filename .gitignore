@@ -162,10 +162,12 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-ccc_01_basics/pyscripts
-cpp_01_basics/pyscripts
-ccc_01_basics/bin
-cpp_01_basics/bin
+ccc_basics_01/pyscripts
+ccc_basics_01/bin
+cpp_basics_01/pyscripts
+cpp_basics_01/bin
+java_basics_01/pyscripts
+php_basics_01/pyscripts
 
 # *.db
 .DS_Store

@@ -1,9 +1,9 @@
 GCCDIR = { put here the value of your ${GCCDIR} }
 
-CXXFLAGS =  -fplugin=/sophia_extractor_gimple.so 
-CXXFLAGS += -fplugin-arg-sophia_extractor_gimple-data_format=json
-CXXFLAGS += -fplugin-arg-sophia_extractor_gimple-source_path=/example/src
-CXXFLAGS += -fplugin-arg-sophia_extractor_gimple-output_path=/example/sophia_extract_output_gimple
+CXXFLAGS =  -fplugin=/eptalights_code_extractor_cxx.so 
+CXXFLAGS += -fplugin-arg-eptalights_code_extractor_cxx-data_format=json
+CXXFLAGS += -fplugin-arg-eptalights_code_extractor_cxx-source_path=/example/src
+CXXFLAGS += -fplugin-arg-eptalights_code_extractor_cxx-output_path=/example/eptalights_code_extract_output_cxx
 
 CCC = g++
 SRCDIR = src
@@ -22,9 +22,9 @@ clean:
 	rm -rf $(BINDIR)
 
 extract:
-	docker run --rm -it --entrypoint /example/build_examples.sh -v ${PWD}/:/example -v ${GIMPLE_EXTRACTOR_PATH}:/sophia_extractor_gimple.so gcc:${DOCKER_GCC_VERSION}
+	docker run --rm -it --entrypoint /example/build_examples.sh -v ${PWD}/:/example -v ${GIMPLE_EXTRACTOR_SHARED_LIB_PATH}:/eptalights_code_extractor_cxx.so gcc:${DOCKER_GCC_VERSION}
 
 shell:
-	docker run --rm -it --entrypoint /bin/bash -v ${PWD}/:/example -v ${GIMPLE_EXTRACTOR_PATH}:/sophia_extractor_gimple.so gcc:${DOCKER_GCC_VERSION}
+	docker run --rm -it --entrypoint /bin/bash -v ${PWD}/:/example -v ${GIMPLE_EXTRACTOR_SHARED_LIB_PATH}:/eptalights_code_extractor_cxx.so gcc:${DOCKER_GCC_VERSION}
 
 .PHONY: all clean check

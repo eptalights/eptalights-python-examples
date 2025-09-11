@@ -1,6 +1,6 @@
-# Sophia Python Examples
+# Eptalights Code Analysis Python Examples
 
-This repository contains [Eptalights](http://eptalights.com) Sophia Python test repos, databases, configs to try out our APIs locally without the need to sign up or contact us.  
+This repository contains [Eptalights](http://eptalights.com) Python test repos, databases, configs to try out our APIs locally without the need to sign up or contact us.  
 
 Remember, this example repository is already configured with its database, so it should be straightforward to use after cloning or downloading the repo.  
 

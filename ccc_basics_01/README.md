@@ -1,28 +1,28 @@
-# ccc_01_basics
-[Eptalights](https://eptalights.com) Sophia C Basic Examples.  
+# ccc_basics_01
+[Eptalights](https://eptalights.com) C Basic Examples.  
 
 Remember, this example repository is already configured with its database, so it should be straightforward to use after cloning or downloading the repo.  
 
 ### Directory Structure
 
 All C source code can be found [here](src/).  
-All C GIMPLE IR JSON data extracted with Eptalights Sophia's [sophia-extractor-cxx](https://github.com/eptalights/sophia-extractor-cxx) can be found [here](sophia_extract_output_gimple/).  
-Sophia's decompiled Pseudo-C code for all functions is provided [here](__sophia_decompiled_code/).  
-Additionally, Eptalights Sophia offers a sample database (`sophia_ir.db`) and a configuration file (`sophia_ir.toml`), both available this current directory, to help you try these examples locally.  
+All C GIMPLE IR JSON data extracted with Eptalights [eptalights-code-extractor-cxx](https://github.com/eptalights/eptalights-code-extractor-cxx) can be found [here](eptalights_code_extract_output_cxx/).  
+Eptalights decompiled Pseudo-C code for all functions is provided [here](__eptalights_code_decompiled/).  
+Additionally, Eptalights offers a sample database (`eptalights_code.db`) and a configuration file (`eptalights_code.toml`), both available this current directory, to help you try these examples locally.  
 
 ### Setting up Examples Locally  
 
 ```sh
 # clone example repo
-git clone git@github.com:eptalights/sophia-python-examples.git
-cd path/to/sophia-python-examples
+git clone git@github.com:eptalights/eptalights-code-python-examples.git
+cd path/to/eptalights-code-python-examples
 
 # setup python environment 
 python -m venv evnv
 . venv/bin/activate
 
-# install sophia-python library 
-pip install git+https://github.com/eptalights/sophia-python.git
+# install eptalights-code-python library 
+pip install git+https://github.com/eptalights/eptalights-code-python.git
 
 # change directory to C examples
 cd ccc_basics_01
@@ -33,8 +33,8 @@ cd ccc_basics_01
 ### Testing our local setup.
 
 ```python
-import eptalights_sophia
-api = eptalights_sophia.LocalAPI("./sophia_ir.toml")
+import eptalights_code
+api = eptalights_code.LocalAPI("./eptalights_code.toml")
 
 for fn in api.search_functions():
     print(fn.name)
@@ -55,7 +55,7 @@ main
 
 ## Documentation
 
-For detailed documentation, please visit [Eptalights Documentation](https://eptalights-sophia.readthedocs.io/en/latest/).
+For detailed documentation, please visit [Eptalights Documentation](https://eptalights-code.readthedocs.io/en/latest/).
 
 You can also check out this [blog post](https://eptalights.com/blog/01-introduction-to-eptalights-technology/) for an introduction to Eptalights Technology.
 
